@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    background: linear-gradient(90deg, #0a0000, #6c2025, #ce2d37);
+    margin: 0;
+    text-align: center;
+    padding: 12px;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding-block: 15px;
+    z-index: 999;
+
+    & h5 {
+        display: inline-block;
+        margin-inline: 15px;
+    }
+
+    & input {
+        width: 25%;
+    }
+}
+
+.section-1 {
+    background-image: url(./Images/Background-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6% 10%;
+
+
+    & header {
+        text-align: left;
+        width: 70%;
+        font-size: larger;
+        color: white;
+        padding: 2%;
+        background-color: rgba(0, 0, 0, 0.5);
+        flex-wrap: wrap;
+        font-weight: bold;
+    }
+}
+
+.section-2 {
+    padding: 1% 5%;
+    background-color: rgba(0, 0, 0, 0.1);
+
+
+    & .middle_box {
+        margin-block: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 1%;
+        color: rgba(0, 0, 0, 0.8); 
+    }
+
+    & h1 {
+        display: block;
+    }
+
+    & .jute {
+        border: 1px solid black;
+        display: inline-block;
+        height: 150px;
+        width: 120px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    & img {
+        height: 123px;
+        width: 118px;
+        overflow-clip-margin: content-box;
+    }
+
+    & p {
+        margin: 0;
+        padding: 0px 0px;
+    }
+}
+
+.section-3 {
+    background: linear-gradient(to left, rgb(17, 17, 17), rgb(102, 97, 97));
+    padding: 80px;
+    height: 100vh;
+
+    & .footer_box {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        height: 75vh;
+        width: 100%;
+        background: linear-gradient(to right, #0a0000, #6c2025, #ce2d37);
+        padding: 10px;
+
+
+
+
+        & .box-1 {
+            max-width: 40%;
+            color: white;
+            margin: 60px;
+            justify-content: left;
+            position: absolute;
+            left: 0%;
+    
+            & h1 {
+                font-size: xx-large;
+                margin-bottom: 30px;
+            }
+    
+            & p {
+                font-size: large;
+                margin-bottom: 40px;
+                line-height: 20px;
+            }
+    
+        }
+
+        & .last_img {
+                height: 250px;
+                width: 250px;
+                margin: 20px;
+                position: absolute;
+                right: 1%;
+                top: 1%;
+                border-radius: 50%;
+                box-shadow: 8px 8px 8px white;        
+        }   
+
+    }
+
+}
+
+.box-2:hover .last_img{
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+}
